@@ -31,6 +31,7 @@ header{
 .header-txt h3{
     font-size: 1.75rem;
     color: #1D1F29;
+    padding-bottom: 5px;
 }
 .header-txt p{
     font-size: 0.875rem;
@@ -214,6 +215,21 @@ overview h3{
     font-size: 2rem;
     font-weight: 700;
 }
+
+@media (max-width: 1114px) {
+    .follower-section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .followers-count{
+        width: 13rem;
+    }
+    .daily-overview{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .single-overview{
+        width: 13rem;
+    }
+}
 @media (min-width: 768px) and (max-width: 1020px) {
     .follower-section{
         margin-left: 1.5rem;
@@ -228,7 +244,40 @@ overview h3{
     }
 }
 @media (min-width: 320px) and (max-width:420px){
+    header{
+        height: 14.6875rem;
+    }
     .header-content{
         display: block;
+        margin-top: 2rem;
+    }
+    .header-txt{
+        width: 100%;
+    }
+    .header-txt h3{
+        font-size: 1.4rem;
+    }
+    .header-btn{
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 2rem;
+        padding-top: 1.9rem;
+        border-top: 2px solid #848BAB;
+    }
+    section{
+       bottom: 2rem;
+    }
+    .follower-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .followers-count{
+        width: 100%;
+    }
+    .daily-overview{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single-overview{
+        width: 100%;
     }
 }
