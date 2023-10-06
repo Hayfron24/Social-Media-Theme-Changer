@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 15.25rem;
+    background: #F7F9FF;
+    display: flex;
+    justify-content: center;
+
+}
+.header-content{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    /* background: red; */
+}
+.header-txt h3{
+    font-size: 1.75rem;
+    color: #1D1F29;
+}
+.header-txt p{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #63687D;
+}
+.header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8125rem;
+}
+.header-btn p{
+    color: #848BAB;
+    text-align: right;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header-btn button{
+   border: none;
+   background: none;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 6rem;
+}
+followers {
+    width: 80%;
+}
+.follower-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 1.5rem;
+}
+.followers-count{
+    width: 15.9375rem;
+    height: 13.5rem;
+    background: #F1F3FA;
+    border-top: 4px solid #178FF5;    border-image-slice: 1;
+    border-radius: 0.3rem;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.followers-count:hover{
+    background-color: #e1e4f0;
+    transform: scale(1.03);
+}
+.followers-count:nth-child(2){
+    border-top: 4px solid #1DA1F2;
+}
+.followers-count:nth-child(3){
+    border-top: 4px solid transparent; /* Adjust the border thickness as needed */
+    border-image: linear-gradient(90deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-image-slice: 1;
+}
+.followers-count:nth-child(4){
+    border-top: 4px solid #C4032B;
+}
+.email {
+    color: #63687D;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1.5rem;
+}
+#facebook{
+    color: #178FF5;
+    font-size: 1.3rem;
+    padding: 0 0.5rem 0 0;
+}
+#count{
+    color: #1D1F29;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3rem; /* 85.714% */
+    letter-spacing: 0.135rem;
+    padding-bottom: 0.5rem;
+}
+#followers{
+    color: #63687D;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+#arrow-up{
+    color: #1EB589;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: normal;
+}
+#arrow-down{
+    color: #DC414C;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+overview{
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+overview h3{
+    color: #63687D;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 0 1rem 0;
+}
+.daily-overview{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.single-overview{
+    width: 15.9375rem;
+    height: 7.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.3125rem;
+    background: #F1F3FA;
+    transition: .2s ease-in-out;
+}
+.single-overview:hover{
+    background-color: #e1e4f0;
+    transform: scale(1.03);
+}
+
+.title{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title p{
+    color: #63687D;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+#instagram{
+    background: linear-gradient(90deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+    padding: 0 0.5rem 0 0;
+}
+
+#twitter{ 
+    color: #1DA1F2;
+    font-size: 1.3rem;
+    padding: 0 0.5rem 0 0;
+}
+#youtube{
+    color: #C4032B;
+    font-size: 1.3rem;
+    padding: 0 0.5rem 0 0;
+}
+.result{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result h1{
+    color: #1D1F29;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 1020px) {
+    .follower-section{
+        margin-left: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    overview h3{
+        margin-left: 1.5rem;
+    }
+    .daily-overview{
+        margin-left: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 320px) and (max-width:420px){
+    .header-content{
+        display: block;
+    }
+}
