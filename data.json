@@ -1,0 +1,107 @@
+{
+    "followers-count": [
+      {
+        "social_media": "fa-brands fa-facebook-square",
+        "social_media_id": "facebook",
+        "username": "@nathanf",
+        "count": 1987,
+        "followers_type": "followers",
+        "change_today": "12 Today",
+        "arrow_id": "arrow-up"
+      },
+      {
+        "social_media": "fa-brands fa-twitter",
+        "social_media_id": "twitter",
+        "username": "@nathanf",
+        "count": 1044,
+        "followers_type": "followers",
+        "change_today": "99 Today",
+        "arrow_id": "arrow-up"
+      },
+      {
+        "social_media": "fa-brands fa-instagram",
+        "social_media_id": "instagram",
+        "username": "@realnathanf",
+        "count": "11k",
+        "followers_type": "followers",
+        "change_today": "1099 Today",
+        "arrow_id": "arrow-up"
+      },
+      {
+        "social_media": "fa-brands fa-youtube",
+        "social_media_id": "youtube",
+        "username": "Nathan F.",
+        "count": 8239,
+        "followers_type": "subscribers",
+        "change_today": "144 Today",
+        "arrow_id": "arrow-down"
+      }
+    ],
+    "single-overview": [
+      {
+        "metric": "Page Review",
+        "social_media_id": "facebook",
+        "icon_class": "fa-brands fa-facebook-square",
+        "result": 87,
+         "arrow_id": "arrow-up",
+        "change_today": "3%"
+      },
+      {
+        "metric": "Likes",
+        "social_media_id": "facebook",
+        "icon_class": "fa-brands fa-facebook-square",
+        "result": 52,
+         "arrow_id": "arrow-down",
+        "change_today": "2%"
+      },
+      {
+        "metric": "Likes",
+        "social_media_id": "instagram",
+        "icon_class": "fa-brands fa-instagram",
+        "result": 5462,
+         "arrow_id": "arrow-up",
+        "change_today": "2257%"
+      },
+      {
+        "metric": "Profile View",
+        "social_media_id": "instagram",
+        "icon_class": "fa-brands fa-instagram",
+        "result": "52k",
+         "arrow_id": "arrow-up",
+        "change_today": "1375%"
+      },
+      {
+        "metric": "Retweets",
+        "social_media_id": "twitter",
+        "icon_class": "fa-brands fa-twitter",
+        "result": 117,
+         "arrow_id": "arrow-up",
+        "change_today": "303%"
+      },
+      {
+        "metric": "Likes",
+        "social_media_id": "twitter",
+        "icon_class": "fa-brands fa-twitter",
+        "result": 507,
+         "arrow_id": "arrow-up",
+        "change_today": "553%"
+      },
+      {
+        "metric": "Likes",
+        "social_media_id": "youtube",
+        "icon_class": "fa-brands fa-youtube",
+        "result": 107,
+         "arrow_id": "arrow-down",
+        "change_today": "19%"
+      },
+      {
+        "metric": "Total Views",
+        "social_media_id": "youtube",
+        "icon_class": "fa-brands fa-youtube",
+        "result": 1407,
+         "arrow_id": "arrow-down",
+        "change_today": "12%"
+      }
+    ]
+  }
+  
