@@ -6,7 +6,18 @@ const lightModeImg = 'design/switch.svg';
 const darkModeImg = 'design/switch-dark.svg'
 const darkModeElements = document.querySelectorAll('body, header, .followers-count, .single-overview');
 
+const applyDarkMode = () =>{
+    image.src = darkModeImg;
+    darkModeElements.forEach(element =>{
+        element.classList.toggle('dark-mode')
+    });
+};
 
+
+if(darkMode === 'dark-mode'){
+    applyDarkMode();
+
+}
 
 darkModeToggle.addEventListener('click', ()=> {
       // Toggle between initial and alternate image
@@ -32,18 +43,7 @@ darkModeToggle.addEventListener('click', ()=> {
     });
     
     
-const applyDarkMode = () =>{
-    image.src = darkModeImg;
-    darkModeElements.forEach(element =>{
-        element.classList.toggle('dark-mode')
-    });
-};
 
-
-if(darkMode === 'dark-mode'){
-    applyDarkMode();
-
-}
 
 
 
@@ -63,6 +63,7 @@ const fetchData = (url, calback) =>{
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  
     fetchData('data.json', (data) =>{
         const followersCount = data['followers-count'];
 
@@ -93,17 +94,23 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>`;
         });
         document.querySelector('.daily-overview').innerHTML = overviewHTML;
+        
+        const followersCountElements = document.querySelectorAll('.followers-count, .single-overview');
+        darkModeToggle.addEventListener('click', () => {
+                followersCountElements.forEach(element => {
+                    element.classList.toggle('dark-mode');
+                });
+        });
+
+        
+        if(darkMode === 'dark-mode'){
+            followersCountElements.forEach(element => {
+                element.classList.toggle('dark-mode');
+            });
+        }
     });
     // Assume 'followers-count' elements have the class 'new-class-name' initially.
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-
-    darkModeToggle.addEventListener('click', () => {
-        const followersCountElements = document.querySelectorAll('.followers-count, .single-overview');
-
-        followersCountElements.forEach(element => {
-            element.classList.toggle('dark-mode');
-        });
-    });
+    
 
 });
